@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Game from './Game';
+import Score from './Score';
 import logo from './logo.svg';
 import './App.css';
 
@@ -37,9 +38,7 @@ class App extends Component {
         </header>
         <div className="game">
           <Game numQuestions={this.state.numQuestions} numCorrect={this.state.numCorrect} handleScore={this.handleScore}/>
-          <p className="text">
-          Your Score: {this.state.numCorrect}/{this.state.numQuestions}
-        </p>
+          <Score numQuestions={this.state.numQuestions} numCorrect={this.state.numCorrect} />
         </div>
       </div>
     );
