@@ -2,7 +2,6 @@ import React from 'react';
 
 
 class Game extends React.Component {
-
   constructor(props){
     super(props);
     const askQuestionObj = this.askQuestion();
@@ -65,7 +64,6 @@ class Game extends React.Component {
         </div>
         <button name="true" onClick={this.handleAnswer}>True</button>
         <button name="false" onClick={this.handleAnswer}>False</button>
-        
       </div>
     )
   }
